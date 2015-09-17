@@ -46,7 +46,14 @@
     <Compile Include="TierConfigurationElement.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="AppDynamics.Configuration.nuspec" />
+    <Content Include="AppDynamics.Configuration.nuspec">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="content\App.config.install.xdt" />
+    <None Include="content\App.config.uninstall.xdt" />
+    <None Include="content\Web.config.install.xdt" />
+    <None Include="content\Web.config.uninstall.xdt" />
+    <None Include="tools\install.ps1" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
