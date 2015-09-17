@@ -1,9 +1,18 @@
 # .NET Configuration Module for AppDynamics
-This project is a generic configuration block to include in .NET config files relating to AppDynamics.
 
-## Adding the Configuration
+This project is a generic configuration block to include in .NET config files relating to AppDynamics. NOTE: This does not
+tie in with the .NET agent, it's merely a construct to assist with configuration and automation.
 
-Step 1: Add the config section
+## Installation
+
+This package is available as a Nuget package:
+
+```
+Install-Package AppDynamics.Configuration
+```
+
+Installing the package includes a transform of your Web.config or App.config to include the config section declaration
+and the configuration block. After installation, your config file will look as follows:
 
 ```
 <configuration>
@@ -11,32 +20,14 @@ Step 1: Add the config section
 	...
     <section name="appdynamics" type="AppDynamics.Configuration.AppDynamicsConfigurationSection, AppDynamics.Configuration"/>
   </configSections>
-  ...
-</configuration>
-```
-
-Step 2: Add the ```appdynamics``` configuration element
-
-```
-<configuration>
-  ...
   <appdynamics>
 	<app name="test_app">
-		<properties>
-		  <clear/>
-		  <add key="test" value="app property"/>
-		</properties>
+		<properties/>
 	</app>
-	<tier name="test_tier">
-		<properties>
-		  <clear/>
-		  <add key="test" value="tier property"/>
-		</properties>
+	<tier name="...your assembly name...">
+		<properties/>
 	</app>
-    <properties>
-      <clear/>
-      <add key="test" value="node property"/>
-    </properties>
+    <properties/>
   </appdynamics>
   ...
 </configuration>
