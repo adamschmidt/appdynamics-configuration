@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <configSections>
+    <section name="appdynamics" xdt:Transform="Remove" xdt:Locator="Match(name)"/>
+  </configSections>
+  <appdynamics xdt:Transform="Remove"/>
+</configuration>

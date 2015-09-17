@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <configSections xdt:Transform="InsertIfMissing">
+    <section name="appdynamics" type="AppDynamics.Configuration.AppDynamicsConfigurationSection, AppDynamics.Configuration" xdt:Transform="InsertIfMissing"/>
+  </configSections>
+  <appdynamics xdt:Transform="InsertIfMissing">
+    <app name="test_app">
+      <properties/>
+    </app>
+    <tier name="$AssemblyName$">
+      <properties/>
+    </tier>
+    <properties/>
+  </appdynamics>
+</configuration>

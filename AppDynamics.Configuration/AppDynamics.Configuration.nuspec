@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>AppDynamics.Configuration</id>
+    <version>$version$</version>
+    <authors>adamschmidt</authors>
+    <owners>adamschmidt</owners>
+    <projectUrl>https://github.com/adamschmidt/appdynamics-configuration</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>Initial release</releaseNotes>
+    <copyright>Copyright 2015</copyright>
+    <tags>appdynamics</tags>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Configuration"/>
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="bin\Release\AppDynamics.Configuration.dll" target="lib\net40" />
+    <file src="bin\Release\AppDynamics.Configuration.pdb" target="lib\net40" />
+    <file src="content\**\*.*" target="content"/>
+    <file src="tools\**\*.*" target="tools"/>
+  </files>
+</package>
