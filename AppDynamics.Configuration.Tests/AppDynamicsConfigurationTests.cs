@@ -31,7 +31,7 @@ namespace AppDynamics.Configuration.Tests
             Assert.AreEqual("test_tier", config.Tier.Name);
             Assert.IsTrue(
                 config.Tier.TierProperties != null,
-                "appdynamics/app must contain a 'properties' element for this test to pass");
+                "appdynamics/tier must contain a 'properties' element for this test to pass");
             Assert.IsTrue(
                 config.Tier.TierProperties["test"] != null && config.Tier.TierProperties["test"].Value == "tier property",
                 "appdynamics/tier/properties must contain a 'test' key set to 'tier property' for this test to pass");
